@@ -41,3 +41,9 @@ const router = require('express').Router();
 ```javascript
       return res.status(200).json({message: 'Answer is successfully attached'});
 ```
+
+9. At the end you will have to import all your routes in your index.js:
+```javascript
+const routes = require('./routes/index');
+app.use(routes);
+```
